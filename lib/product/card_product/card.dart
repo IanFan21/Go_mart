@@ -28,40 +28,42 @@ class CadrList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GridView.count(
-      shrinkWrap: true,
-      crossAxisCount: 2,
-      children: List.generate(products.length, (index) {
-        Product product = products[index];
-        return InkWell(
-          onTap: () {
-            // Handle tap on product
-            // navigate to other page
-          },
-          child: Card(
-            child: Container(
-              width: 150,
-              height: 150,
-              child: Column(
-                children: <Widget>[
-                  AspectRatio(
-                    aspectRatio: 1,
-                    child: Container(
-                      decoration: BoxDecoration(
-                        image: DecorationImage(
-                            image: AssetImage(product.image),
-                            fit: BoxFit.cover),
+    return SingleChildScrollView(
+      child: GridView.count(
+        shrinkWrap: true,
+        crossAxisCount: 2,
+        children: List.generate(products.length, (index) {
+          Product product = products[index];
+          return InkWell(
+            onTap: () {
+              // Handle tap on product
+              // navigate to other page
+            },
+            child: Card(
+              child: Container(
+                width: 150,
+                height: 150,
+                child: Column(
+                  children: <Widget>[
+                    AspectRatio(
+                      aspectRatio: 1,
+                      child: Container(
+                        decoration: BoxDecoration(
+                          image: DecorationImage(
+                              image: AssetImage(product.image),
+                              fit: BoxFit.cover),
+                        ),
                       ),
                     ),
-                  ),
-                  Text(product.name),
-                  Text(product.description),
-                ],
+                    Text(product.name),
+                    Text(product.description),
+                  ],
+                ),
               ),
             ),
-          ),
-        );
-      }),
+          );
+        }),
+      ),
     );
   }
 }
