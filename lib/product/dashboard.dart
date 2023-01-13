@@ -32,9 +32,9 @@ class _DashboardState extends State<Dashboard> {
         body: widgets[currentIndex],
         bottomNavigationBar: ConvexAppBar(
           items: [
-            TabItem(icon: Icons.home, title: 'dashboard'),
-            TabItem(icon: Icons.map, title: 'profile'),
-            TabItem(icon: Icons.add, title: 'transaksi'),
+            TabItem(icon: Icons.dashboard, title: 'dashboard'),
+            TabItem(icon: Icons.account_circle, title: 'profile'),
+            TabItem(icon: Icons.shopping_cart, title: 'transaksi'),
           ],
           onTap: (int i) => setState(() {
             currentIndex = i;

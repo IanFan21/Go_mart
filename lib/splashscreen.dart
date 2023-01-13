@@ -2,6 +2,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:gomart/login.dart';
 import 'package:gomart/main.dart';
+import 'package:gomart/product/dashboard.dart';
 
 class SplashScreen extends StatefulWidget {
   @override
