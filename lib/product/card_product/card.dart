@@ -7,53 +7,53 @@ class CadrList extends StatelessWidget {
     Product(
         name: 'Kiwi',
         description: 'Jamin segar kerna baru di petik dari pohonya',
-        image: 'assets/splash.png',
-        price: 3.5),
+        image: 'assets/kiwi.png',
+        price: 4.3),
     Product(
         name: 'Apel',
         description: 'Jamin segar kerna baru di petik dari pohonya',
-        image: 'assets/splash.png',
-        price: 3.5),
+        image: 'assets/apel.png',
+        price: 2.1),
     Product(
         name: 'Alpukat',
         description: 'Jamin segar kerna baru di petik dari pohonya',
-        image: 'assets/splash.png',
-        price: 3.5),
+        image: 'assets/alpukat.png',
+        price: 1.4),
     Product(
         name: 'Mangga',
         description: 'Jamin segar kerna baru di petik dari pohonya',
-        image: 'assets/splash.png',
-        price: 3.5),
+        image: 'assets/mangga.png',
+        price: 1.7),
     Product(
         name: 'Strowberi',
         description: 'Jamin segar kerna baru di petik dari pohonya',
-        image: 'assets/splash.png',
-        price: 3.5),
+        image: 'assets/stroberi.png',
+        price: 2.7),
     Product(
         name: 'Manggis',
         description: 'Jamin segar kerna baru di petik dari pohonya',
-        image: 'assets/splash.png',
-        price: 3.5),
+        image: 'assets/manggis.png',
+        price: 3.0),
     Product(
         name: 'Pepaya',
         description: 'Jamin segar kerna baru di petik dari pohonya',
-        image: 'assets/splash.png',
-        price: 3.5),
+        image: 'assets/pepaya.png',
+        price: 1.0),
     Product(
         name: 'Jeruk',
         description: 'Jamin segar kerna baru di petik dari pohonya',
-        image: 'assets/splash.png',
-        price: 3.5),
+        image: 'assets/jeruk.png',
+        price: 1.6),
     Product(
         name: 'Rambutan',
         description: 'Jamin segar kerna baru di petik dari pohonya',
-        image: 'assets/splash.png',
-        price: 3.5),
+        image: 'assets/rambutan.png',
+        price: 1.4),
     Product(
         name: 'Jambu Biji',
         description: 'Jamin segar kerna baru di petik dari pohonya',
-        image: 'assets/splash.png',
-        price: 3.5),
+        image: 'assets/jambu_biji.png',
+        price: 1.32),
     // add more product here
   ];
 
