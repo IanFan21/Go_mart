@@ -81,30 +81,36 @@ class CadrList extends StatelessWidget {
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(20),
               ),
-              child: Container(
-                width: 150,
-                height: 150,
-                child: ListView(
-                  children: <Widget>[
-                    AspectRatio(
-                      aspectRatio: 2 / 1,
-                      child: Container(
-                        decoration: BoxDecoration(
-                          image: DecorationImage(
-                            image: AssetImage(product.image),
-                            fit: BoxFit.cover,
-                            scale: 0.5,
+              child: Padding(
+                padding: EdgeInsets.all(8),
+                child: Container(
+                  width: 150,
+                  height: 150,
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    children: <Widget>[
+                      Expanded(
+                        child: AspectRatio(
+                          aspectRatio: 2 / 1,
+                          child: Container(
+                            decoration: BoxDecoration(
+                              image: DecorationImage(
+                                image: AssetImage(product.image),
+                                fit: BoxFit.cover,
+                                scale: 0.5,
+                              ),
+                            ),
                           ),
                         ),
                       ),
-                    ),
-                    Text(
-                      product.name,
-                      textAlign: TextAlign.center,
-                      style: TextStyle(fontWeight: FontWeight.bold),
-                    ),
-                    Text(product.description, textAlign: TextAlign.center),
-                  ],
+                      Text(
+                        product.name,
+                        textAlign: TextAlign.center,
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                      ),
+                      Text(product.description, textAlign: TextAlign.center),
+                    ],
+                  ),
                 ),
               ),
             ),
