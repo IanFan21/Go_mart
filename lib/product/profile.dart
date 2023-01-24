@@ -40,11 +40,11 @@ class _ProfileState extends State<Profile> {
               SizedBox(
                 width: 120,
                 height: 45,
-                child: RaisedButton(
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(30.0),
+                child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    primary: Colors.blue,
+                    shape: StadiumBorder(),
                   ),
-                  color: Colors.blue,
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
@@ -63,11 +63,11 @@ class _ProfileState extends State<Profile> {
               SizedBox(
                 width: 120,
                 height: 45,
-                child: RaisedButton(
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(30.0),
+                child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    primary: Colors.blue,
+                    shape: StadiumBorder(),
                   ),
-                  color: Colors.blue,
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[

@@ -9,8 +9,17 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: CadrList(),
+    return SafeArea(
+      child: Column(
+        children: <Widget>[
+          Container(
+              // your code here
+              ),
+          Expanded(
+            child: CadrList(),
+          ),
+        ],
+      ),
     );
   }
 }

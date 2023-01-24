@@ -82,7 +82,7 @@ class CadrList extends StatelessWidget {
                 borderRadius: BorderRadius.circular(20),
               ),
               child: Padding(
-                padding: EdgeInsets.all(8),
+                padding: EdgeInsets.all(10),
                 child: Container(
                   width: 150,
                   height: 150,
