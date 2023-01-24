@@ -10,15 +10,17 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
-      child: Column(
-        children: <Widget>[
-          Container(
-              // your code here
+      child: Padding(
+        padding: EdgeInsets.all(16),
+        child: Column(
+          children: <Widget>[
+            Expanded(
+              child: Flexible(
+                child: CadrList(),
               ),
-          Expanded(
-            child: CadrList(),
-          ),
-        ],
+            ),
+          ],
+        ),
       ),
     );
   }
